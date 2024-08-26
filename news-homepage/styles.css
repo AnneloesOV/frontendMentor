@@ -1,0 +1,42 @@
+html {
+    background-color: hsl(36, 100%, 99%);
+}
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+#container {
+    display: grid;
+    gap: 1.5rem; /*should be no space between 1.5 and rem!!*/
+}
+
+p {
+    font-size: 15px;
+}
+
+h2 {
+    color: hsl(35, 77%, 62%);
+} 
+
+h3 {
+    color: hsl(5, 85%, 63%)
+} 
+
+#main-image {
+    width: 300px;
+}
+
+#sidebar {
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    padding: 10px;
+}
+
+#sidebar p {
+    color: hsl(233, 8%, 79%);
+}
+
+.bottom-bar-image {
+    height: 120px;
+}
