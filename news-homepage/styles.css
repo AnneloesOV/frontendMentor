@@ -2,8 +2,59 @@ html {
     background-color: hsl(36, 100%, 99%);
 }
 
+p {
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+
 * {
     font-family: "Inter", sans-serif;
+}
+
+#top-bar-desktop {
+    display: none;
+}
+
+#top-bar-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+
+@media (min-width: 50em) {
+    #top-bar-mobile {
+        display: none;
+    }
+
+    #top-bar-desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #top-bar-desktop nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: flex-end;
+        align-items: center;
+    } 
+
+    #top-bar-desktop nav li {
+        list-style: none;
+    }
+
+    #top-bar-desktop nav a {
+        text-decoration: none;
+        color: hsl(236, 13%, 42%);
+    }
+
+    #top-bar-desktop nav a:hover {
+        color: hsl(5, 85%, 63%);
+    }
 }
 
 #container {
@@ -11,8 +62,32 @@ html {
     gap: 1.5rem; /*should be no space between 1.5 and rem!!*/
 }
 
-p {
-    font-size: 15px;
+#biggest-container {
+    padding: 10px;
+    display: grid;
+    gap: 2rem;
+}
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(240, 100%, 5%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: none;
+}
+
+button:hover {
+    background-color: hsl(240, 100%, 5%);
+    color: white;
 }
 
 h2 {
@@ -24,19 +99,36 @@ h3 {
 } 
 
 #main-image {
-    width: 300px;
+    width: 330px;
 }
 
-#sidebar {
+#new-bar {
+    min-width: 300px;
+    max-width: 320px;
     background-color: hsl(240, 100%, 5%);
-    color: white;
-    padding: 10px;
+    padding: 15px;
 }
 
-#sidebar p {
+#new-bar p {
     color: hsl(233, 8%, 79%);
+}
+
+#new-bar h5 {
+    color: white;
+}
+
+.item-new-bar {
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+}
+
+.item-new-bar:nth-last-child(1) {
+    border-bottom: none;
 }
 
 .bottom-bar-image {
     height: 120px;
+}
+
+#bottom-bar {
+    display: grid;
 }
