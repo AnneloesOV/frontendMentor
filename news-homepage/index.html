@@ -35,15 +35,23 @@
     </div>
 
     <div id="container">
-
-      <div id="main">
-        <img id="main-image" src="assets/images/image-web-3-mobile.jpg">
+      <div id="main-image">
+        <picture>
+          <!-- Image for large screens (800px and above) -->
+          <source media="(min-width: 800px)" srcset="assets/images/image-web-3-desktop.jpg">
+      
+          <!-- Image for small screens (less than 800px) -->
+          <img src="assets/images/image-web-3-mobile.jpg" alt="Responsive Image">
+        </picture>
+      </div>
+      <div id="main-heading">
         <h1>The Bright Future of Web 3.0?</h1>
+      </div>
+      <div id="main-paragraph">
         <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
         But is it really fulfilling its promise?<p>
         <button>Read more</button>
       </div>
-
       <div id="new-bar">
         
         <h2>New</h2> 
@@ -61,33 +69,39 @@
         </div>
 
       </div>
-
-      <div id="bottom-bar">
-        <div class="bottom-bar-item">
-          <img class="bottom-bar-image" src="assets/images/image-retro-pcs.jpg">
-          <div class="bottom-bar-text">
-            <h3>01</h3>
-            <h5>Reviving Retro PCs</h5>
-            <p>What happens when old PCs are given modern upgrades?</p>
-          </div>
-        </div>
-        <div class="bottom-bar-item">
-          <img class="bottom-bar-image" src="assets/images/image-top-laptops.jpg">
-          <div class="bottom-bar-text">
-            <h3>02</h3>
-            <h5>Top 10 Laptops of 2022</h5>
-            <p>Our best picks for various needs and budgets.</p>
-          </div>
-        </div>
-        <div class="bottom-bar-item">
-          <img class="bottom-bar-image" src="assets/images/image-gaming-growth.jpg">
-          <div class="bottom-bar-text">
-            <h3>03</h3>
-            <h5>The Growth of Gaming</h5>
-            <p>How the pandemic has sparked fresh opportunities.</p>
-          </div>
+      <div class="white-bar">
+        <p style="color:hsl(36, 100%, 99%);">White</p>
+      </div>
+      <div class="bottom-bar-item">
+        <img class="bottom-bar-image" src="assets/images/image-retro-pcs.jpg">
+        <div class="bottom-bar-text">
+          <h3>01</h3>
+          <h5>Reviving Retro PCs</h5>
+          <p>What happens when old PCs are given modern upgrades?</p>
         </div>
       </div>
+      <div class="bottom-bar-item">
+        <img class="bottom-bar-image" src="assets/images/image-top-laptops.jpg">
+        <div class="bottom-bar-text">
+          <h3>02</h3>
+          <h5>Top 10 Laptops of 2022</h5>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="bottom-bar-item">
+        <img class="bottom-bar-image" src="assets/images/image-gaming-growth.jpg">
+        <div class="bottom-bar-text">
+          <h3>03</h3>
+          <h5>The Growth of Gaming</h5>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+
+
+
+
+        
+      
 
     </div>
 
