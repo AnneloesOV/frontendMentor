@@ -1,16 +1,23 @@
-html {
-    background-color: hsl(36, 100%, 99%);
-    font-size: 15px;
+/*global variables of the styling guidelines*/
+:root {
+    --background-off-white: hsl(36, 100%, 99%);
+    --light-gray-blue: hsl(233, 8%, 79%);
+    --dark-gray-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    --font-size: 15px;
+    --font-family: "Inter", sans-serif;
 }
 
 p {
     font-size: 1rem;
-    color: hsl(236, 13%, 42%);
+    color: var(--dark-gray-blue);
     line-height: 1.7;
 }
 
 * {
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-family);
 }
 
 #top-bar-desktop {
@@ -27,7 +34,7 @@ p {
     gap: 30px;
 }
 
-
+/*Responsive design of the navigation bar, or menu item*/
 @media (min-width: 1110px) {
     #top-bar-mobile {
         display: none;
@@ -55,11 +62,11 @@ p {
 
     #top-bar-desktop nav a {
         text-decoration: none;
-        color: hsl(236, 13%, 42%);
+        color: var(--dark-grey-blue);    
     }
 
     #top-bar-desktop nav a:hover {
-        color: hsl(5, 85%, 63%);
+        color: var(--soft-red);
     }
 }
 
@@ -121,6 +128,7 @@ p {
     grid-area: seven;
 }
 
+/*Responsive design of the layout of the page*/
 @media (min-width: 1110px) {
     #container {
         display: grid;
@@ -138,7 +146,7 @@ p {
     }
 
     .white-bar {
-        grid-area: white;
+        grid-area: var(--background-off-white);
     }
 
     #main-heading h1 {
@@ -198,8 +206,8 @@ p {
 }
 
 button {
-    background-color: hsl(5, 85%, 63%);
-    color: hsl(240, 100%, 5%);
+    background-color: var(--soft-red);
+    color: var(--very-dark-blue);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
@@ -213,14 +221,14 @@ button:hover {
 }
 
 #new-bar h2 {
-    color: hsl(35, 77%, 62%);
+    color: var(--soft-orange);
     font-size: 2rem;
     margin-top: 10px;
     margin-bottom: 25px;
 } 
 
 h3 {
-    color: hsl(5, 85%, 63%);
+    color: var(--soft-red);
     font-size: 2rem;
 } 
 
@@ -231,12 +239,12 @@ h5 {
 #new-bar {
     min-width: 300px;
     max-width: 320px;
-    background-color: hsl(240, 100%, 5%);
+    background-color: var(--very-dark-blue);
     padding: 25px;
 }
 
 #new-bar p {
-    color: hsl(233, 8%, 79%);
+    color: var(--light-gray-blue);
 }
 
 #new-bar h5 {
@@ -244,15 +252,15 @@ h5 {
 }
 
 #new-bar h5:hover {
-    color: hsl(35, 77%, 62%);
+    color: var(--soft-orange);
 }
 
 .bottom-bar-item h5:hover {
-    color: hsl(5, 85%, 63%);
+    color: var(--soft-red);
 }
 
 .item-new-bar {
-    border-bottom: 1px solid hsl(233, 8%, 79%);
+    border-bottom: 1px solid var(--light-gray-blue);
 }
 
 .item-new-bar:nth-last-child(1) {
