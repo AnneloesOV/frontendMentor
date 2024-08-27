@@ -13,21 +13,13 @@ p {
     font-family: "Inter", sans-serif;
 }
 
-#biggest-container {
-    display: grid;
-    justify-content: center;
-    row-gap: 2rem;
-    grid-template-areas:
-    'top'
-    'bottom'
-}
-
 #top-bar-desktop {
     grid-area: top;
     display: none;
 }
 
 #top-bar-mobile {
+    margin: 25px 0px;
     grid-area: top;
     display: flex;
     justify-content: space-between;
@@ -36,12 +28,13 @@ p {
 }
 
 
-@media (min-width: 50em) {
+@media (min-width: 1110px) {
     #top-bar-mobile {
         display: none;
     }
 
     #top-bar-desktop {
+        margin: 25px 0px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -73,10 +66,12 @@ p {
 #container {
     grid-area: bottom;
     display: grid;
+    grid-auto-columns: 370px;
     justify-content: center;
     column-gap: 0.75rem;
     row-gap: 0.75rem;
     grid-template-areas:
+    'top'
     'one'
     'two'
     'three'
@@ -126,7 +121,7 @@ p {
     grid-area: seven;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 1110px) {
     #container {
         display: grid;
         justify-content: center;
@@ -135,6 +130,7 @@ p {
         grid-template-columns: 365px 365px 350px;
         grid-template-rows: 300px auto-fill 80px 140px;
         grid-template-areas:
+            'top top top'
             'one one four'
             'two three four'
             'white white white'
