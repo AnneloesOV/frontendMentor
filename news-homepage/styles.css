@@ -13,11 +13,22 @@ p {
     font-family: "Inter", sans-serif;
 }
 
+#biggest-container {
+    display: grid;
+    justify-content: center;
+    row-gap: 2rem;
+    grid-template-areas:
+    'top'
+    'bottom'
+}
+
 #top-bar-desktop {
+    grid-area: top;
     display: none;
 }
 
 #top-bar-mobile {
+    grid-area: top;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,13 +70,8 @@ p {
     }
 }
 
-#biggest-container {
-    padding: 10px;
-    display: grid;
-    gap: 1.5rem;
-}
-
 #container {
+    grid-area: bottom;
     display: grid;
     justify-content: center;
     column-gap: 0.75rem;
