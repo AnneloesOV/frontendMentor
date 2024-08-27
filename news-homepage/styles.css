@@ -92,10 +92,16 @@ p {
 #main-heading h1 {
     font-size: 3rem;
     margin: 0;
+    padding: 10px;
 }
 
 #main-paragraph {
     grid-area: three;
+}
+
+#main-paragraph p {
+    margin: 0;
+    padding: 10px;
 }
 
 #new-bar {
