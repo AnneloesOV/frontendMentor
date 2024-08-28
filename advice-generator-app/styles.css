@@ -55,8 +55,8 @@ html {
 #icon-box {
     background-color: var(--neon-green);
     border-radius: 50%;
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     display: grid;
     place-items: center;
     align-self: end;
