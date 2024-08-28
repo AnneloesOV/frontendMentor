@@ -63,3 +63,7 @@ html {
     position: absolute;
     bottom: -8%;
 }
+
+#icon-box:hover {
+    box-shadow: 0 0 30px rgba(82, 255, 168, 1) 
+}
