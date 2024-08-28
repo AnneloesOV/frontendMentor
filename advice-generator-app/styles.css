@@ -1,0 +1,45 @@
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+    --font-size: 28px;
+    --font-family: "Manrope", sans-serif;
+}
+
+* {
+    font-family: var(--font-family);
+}
+
+html {
+    background-color: var(--dark-blue);
+    height: 100%;
+}
+
+#icon-box {
+    background-color: var(--neon-green);
+}
+
+#advice-container {
+    background-color: var(--dark-blue);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#advice-card {
+    background-color: var(--dark-grayish-blue);
+    width: 500px;
+    height: 300px;
+}
+
+#advice-header {
+    color: var(--neon-green);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#advice {
+    color: var(--light-cyan);
+}
