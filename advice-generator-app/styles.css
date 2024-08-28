@@ -17,10 +17,6 @@ html {
     height: 100%;
 }
 
-#icon-box {
-    background-color: var(--neon-green);
-}
-
 #advice-container {
     background-color: var(--dark-blue);
     display: grid;
@@ -32,14 +28,38 @@ html {
     background-color: var(--dark-grayish-blue);
     width: 500px;
     height: 300px;
+    border-radius: 5%;
+    display: grid;
+    justify-items: center;
+    padding: 15px;
+    position: relative;
+    width: 90%;
+    max-width: 550px;
 }
 
 #advice-header {
     color: var(--neon-green);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 }
 
 #advice {
     color: var(--light-cyan);
+    font-size: 2rem;
+}
+
+#pattern-divider-image {
+    padding-bottom: 4%;
+}
+
+#icon-box {
+    background-color: var(--neon-green);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    align-self: end;
+    position: absolute;
+    bottom: -8%;
 }
